@@ -15,3 +15,7 @@ n8n composer:
 ```
 http://localhost:5678/
 ```
+## Vector database
+```
+docker pull qdrant/qdrant:v1.16
+```
