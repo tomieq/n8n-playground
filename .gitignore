@@ -1,2 +1,2 @@
-ollama/
-ollama-webui/
+local-ollama/ollama-volume/
+local-ollama/ollama-webui-volume/

@@ -11,7 +11,8 @@ sleep 5
 ollama list
 
 echo "🐇 Retrieve llama3 model..."
-ollama pull llama3.1:8b
+ollama pull llama3.2:1b
+
 echo "🟢 llama downloaded!"
 
 # Wait for Ollama process to finish.
