@@ -19,23 +19,6 @@ services:
     volumes:
       - n8n_data:/home/node/.n8n
       - ./local-files:/home/node/.n8n-files
-
-  ollama:
-    image: docker.io/ollama/ollama:0.15.2
-    ports:
-      - 7869:11434
-    volumes:
-      - ./ollama:/root/.ollama
-      - ./ollama-init-model.sh:/init-model.sh
-    container_name: ollama
-    hostname: ollama
-    pull_policy: always
-    tty: true
-    restart: always
-    entrypoint: ["/usr/bin/bash", "/init-model.sh"]
-    environment:
-      - OLLAMA_KEEP_ALIVE=24h
-      - OLLAMA_HOST=0.0.0.0
   
   qdrant:
     image: qdrant/qdrant:v1.16
