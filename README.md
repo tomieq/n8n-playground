@@ -19,3 +19,7 @@ http://localhost:5678/
 ```
 docker pull qdrant/qdrant:v1.16
 ```
+Qdtant UI:
+```
+http://localhost:6333/dashboard#/collections
+```
